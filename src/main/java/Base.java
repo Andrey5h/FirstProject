@@ -14,8 +14,10 @@ public class Base {
         // Водим второе число
         System.out.println("Введите число 2");
         double b = scanner.nextDouble();
-        // Получаем результат
-        System.out.println("Сумма = " +(i+b));
+        // Задаем еще одну переменну d
+        double d = i + b;
+        // Округляем переменную d до 4х знаков после заяпятой
+        System.out.printf("Сумма = %.4f",d);
         scanner.close();
     }
 }
