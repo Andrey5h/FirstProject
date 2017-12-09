@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Base {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Select action: 1 - Calculator, 2 - You chose the program: Find the maximum or minimum word in the array");
+        System.out.println("Select action: 1 - Calculator, 2 - Find the maximum or minimum word in the array");
         int choose1 = scanner.nextInt();
         //делаем выбор между двумя программами: 1 - Калькулятор, 2 - Поиск максимального слова в массиве.
         if (choose1 == 1) {
@@ -101,8 +101,7 @@ public class Base {
 
             int k = 0;
             while (k < b.length) {
-                System.out.print(k);
-                System.out.println(" элимент массива =: " + b[k]);
+                System.out.println(+k +" элимент массива =: " + b[k]);
                 k++;
             }
             //Выбираем между действиями 1 - Поиск самого длинного слова в массиве, 2 - Поиск самого короткого слова в массиве
